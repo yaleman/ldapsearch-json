@@ -51,4 +51,4 @@ def cli(
             except json.JSONDecodeError as json_error:
                 logger.error("Failed to parse JSON for entry {}: {}", entry, json_error)
             cleaned_data = cleandict(data)
-            logger.debug(json.dumps(cleaned_data, indent=4, ensure_ascii=False))
+            print(json.dumps(cleaned_data, ensure_ascii=False))

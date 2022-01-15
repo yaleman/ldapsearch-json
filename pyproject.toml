@@ -4,6 +4,7 @@ version = "0.0.1"
 description = "Script to dump LDAP data"
 authors = ["James Hodgkinson <james@terminaloutcomes.com>"]
 license = "MIT"
+readme = "README.md"
 
 [tool.poetry]
 name = "ldapsearch-json"
@@ -23,6 +24,9 @@ pylint = "^2.12.2"
 mypy = "^0.931"
 black = "^21.12b0"
 types-ldap3 = "^2.9.4"
+
+[tool.poetry.scripts]
+ldapsearch-json = "ldapsearch_json:__main__.run_cli"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
