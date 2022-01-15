@@ -1,0 +1,29 @@
+[project]
+name = "ldapsearch-json"
+version = "0.0.1"
+description = "Script to dump LDAP data"
+authors = ["James Hodgkinson <james@terminaloutcomes.com>"]
+license = "MIT"
+
+[tool.poetry]
+name = "ldapsearch-json"
+version = "0.0.1"
+description = "Script to dump LDAP data"
+authors = ["James Hodgkinson <james@terminaloutcomes.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+ldap3 = "^2.9.1"
+loguru = "^0.5.3"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.12.2"
+mypy = "^0.931"
+black = "^21.12b0"
+types-ldap3 = "^2.9.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
