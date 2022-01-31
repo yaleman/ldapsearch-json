@@ -22,7 +22,7 @@ typer = "^0.4.0"
 [tool.poetry.dev-dependencies]
 pylint = "^2.12.2"
 mypy = "^0.931"
-black = "^21.12b0"
+black = "^22.1"
 types-ldap3 = "^2.9.4"
 
 [tool.poetry.scripts]
