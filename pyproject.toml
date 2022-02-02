@@ -23,7 +23,7 @@ typer = "^0.4.0"
 pylint = "^2.12.2"
 mypy = "^0.931"
 black = "^22.1"
-types-ldap3 = "^2.9.5"
+types-ldap3 = "^2.9.6"
 
 [tool.poetry.scripts]
 ldapsearch-json = "ldapsearch_json:__main__.run_cli"
