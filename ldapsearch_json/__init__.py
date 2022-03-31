@@ -34,7 +34,7 @@ def cli(
     base: str,
     filter_string: str = typer.Option(FILTER, "--filter", "-f"),
     search_attributes: List[str] = typer.Option(SEARCH_ATTRIBUTES_DEFAULT, "--search-attributes", "-s" ),
-    ):
+    ) -> None:
     """ JSON-dumping terrible knockoff of ldapsearch """
     if not search_attributes:
         search_attributes = SEARCH_ATTRIBUTES_DEFAULT

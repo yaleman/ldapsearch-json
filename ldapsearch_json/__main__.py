@@ -5,7 +5,7 @@ from typer import run
 from . import cli
 
 
-def run_cli():
+def run_cli() -> None:
     """ for importing from pyproject"""
     run(cli)
 
