@@ -1,9 +1,8 @@
 [project]
 name = "ldapsearch-json"
-version = "0.0.1"
+version = "0.0.3"
 description = "Script to dump LDAP data"
 authors = [
-    "James Hodgkinson <james@terminaloutcomes.com>",
     { name = "James Hodgkinson", email = "james@terminaloutcomes.com" },
 ]
 license = "MIT"
@@ -11,7 +10,7 @@ readme = "README.md"
 
 [tool.poetry]
 name = "ldapsearch-json"
-version = "0.0.2"
+version = "0.0.3"
 description = "Script to dump LDAP data"
 authors = [
     "James Hodgkinson <james@terminaloutcomes.com>",
