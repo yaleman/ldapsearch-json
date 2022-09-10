@@ -10,7 +10,7 @@ readme = "README.md"
 
 [tool.poetry]
 name = "ldapsearch-json"
-version = "0.0.3"
+version = "0.0.4"
 description = "Script to dump LDAP data"
 authors = [
     "James Hodgkinson <james@terminaloutcomes.com>",
