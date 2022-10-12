@@ -13,7 +13,9 @@ ENV PATH=/home/$runuser/.local/bin/:/usr/local/bin:/usr/local/sbin:/usr/local/bi
 # RUN useradd $runuser
 
 # alpine mode
-RUN apk add --no-cache jq
+RUN apk update \
+    && apk add --no-cache jq \
+    && rm -rf /var/cache/apk/*
 RUN addgroup -S appgroup && adduser -S $runuser -G appgroup
 
 RUN mkdir -p /home/$runuser/
