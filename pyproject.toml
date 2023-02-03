@@ -16,7 +16,7 @@ typer = "^0.7.0"
 [tool.poetry.dev-dependencies]
 pylint = "^2.13.3"
 mypy = "^0.991"
-black = "^22.12"
+black = "^23.1"
 types-ldap3 = "^2.9.13"
 pytest = "^7.2.1"
 
