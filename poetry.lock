@@ -557,14 +557,14 @@ test = ["black (>=22.3.0,<23.0.0)", "coverage (>=6.2,<7.0)", "isort (>=5.0.6,<6.
 
 [[package]]
 name = "types-ldap3"
-version = "2.9.13.7"
+version = "2.9.13.8"
 description = "Typing stubs for ldap3"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "types-ldap3-2.9.13.7.tar.gz", hash = "sha256:5303acfa4e356f61cc9da73ae1dc4f61bb0b5d8349b66d3390ff2838fb18735a"},
-    {file = "types_ldap3-2.9.13.7-py3-none-any.whl", hash = "sha256:add38a83f0833a616fee13f1109fea58e730c87aea16d492b4afffe9de1be49e"},
+    {file = "types-ldap3-2.9.13.8.tar.gz", hash = "sha256:24369fa1f835109de15b23a86638e2237d2f16a80d888c88b02773399d28df99"},
+    {file = "types_ldap3-2.9.13.8-py3-none-any.whl", hash = "sha256:2b71b9411f85a093207515a2c9c73452d17f8168dbfabc08b696bc083bfb7341"},
 ]
 
 [package.dependencies]
