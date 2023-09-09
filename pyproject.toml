@@ -10,7 +10,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.7"
 ldap3 = "^2.9.1"
-loguru = "^0.7.0"
+loguru = "^0.7.1"
 typer = "^0.9.0"
 
 [tool.poetry.dev-dependencies]
