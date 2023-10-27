@@ -18,7 +18,7 @@ pylint = "^2.13.3"
 mypy = "^1.4"
 black = "^23.3"
 types-ldap3 = "^2.9.13"
-pytest = "^7.4.2"
+pytest = "^7.4.3"
 
 [tool.poetry.scripts]
 ldapsearch-json = "ldapsearch_json.__main__:run_cli"
