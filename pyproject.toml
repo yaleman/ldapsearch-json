@@ -14,7 +14,7 @@ typer = "^0.12.3"
 [tool.poetry.dev-dependencies]
 mypy = "^1.4"
 types-ldap3 = "^2.9.13"
-pytest = "^7.4.4"
+pytest = "^8.1.1"
 ruff = "^0.3.7"
 
 [tool.poetry.scripts]
