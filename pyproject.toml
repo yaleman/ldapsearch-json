@@ -12,7 +12,7 @@ loguru = "^0.7.2"
 typer = "^0.12.5"
 
 [tool.poetry.dev-dependencies]
-mypy = "^1.11"
+mypy = "^1.12"
 types-ldap3 = "^2.9.13"
 pytest = "^8.3.3"
 ruff = "^0.6.9"
