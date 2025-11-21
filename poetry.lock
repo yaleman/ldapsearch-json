@@ -353,14 +353,14 @@ typing-extensions = ">=3.7.4.3"
 
 [[package]]
 name = "types-ldap3"
-version = "2.9.13.20250622"
+version = "2.9.13.20251121"
 description = "Typing stubs for ldap3"
 optional = false
 python-versions = ">=3.9"
 groups = ["dev"]
 files = [
-    {file = "types_ldap3-2.9.13.20250622-py3-none-any.whl", hash = "sha256:c18d0320327fa0017eb3d95acdf38921542d80939255e4ba130ca2d13ca3375f"},
-    {file = "types_ldap3-2.9.13.20250622.tar.gz", hash = "sha256:4770a8701daddf1ee936d46414205a329211b6f6e655c2764f6b70c89b023c47"},
+    {file = "types_ldap3-2.9.13.20251121-py3-none-any.whl", hash = "sha256:20356bf413cb178898f5b171463b44b82044b8b69f9331e09950009cfef05e48"},
+    {file = "types_ldap3-2.9.13.20251121.tar.gz", hash = "sha256:58f1a63ab56c6e47102035682ec1acf1b127467ae2f52a916f40a6aca852e5a5"},
 ]
 
 [package.dependencies]
