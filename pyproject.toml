@@ -15,7 +15,7 @@ typer = "^0.21.1"
 mypy = "^1.19"
 types-ldap3 = "^2.9.13"
 pytest = "^9.0.2"
-ruff = "^0.15.0"
+ruff = "^0.15.1"
 
 [tool.poetry.scripts]
 ldapsearch-json = "ldapsearch_json.__main__:run_cli"
