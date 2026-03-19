@@ -1,25 +1,25 @@
-[tool.poetry]
+
+[project]
+authors = [{ name = "James Hodgkinson", email = "james@terminaloutcomes.com" }]
+license = { text = "MIT" }
+requires-python = "<4.0,>=3.12"
+dependencies = ["ldap3>=2.9.1", "loguru>=0.7.3", "typer>=0.24.1"]
 name = "ldapsearch-json"
-version = "0.0.5"
+version = "0.0.6"
 description = "Script to dump LDAP data"
-authors = ["James Hodgkinson <james@terminaloutcomes.com>"]
-license = "MIT"
 
-[tool.poetry.dependencies]
-python = "^3.12"
-ldap3 = "^2.9.1"
-loguru = "^0.7.3"
-typer = "^0.24.1"
-
-[tool.poetry.dev-dependencies]
-mypy = "^1.19"
-types-ldap3 = "^2.9.13"
-pytest = "^9.0.2"
-ruff = "^0.15.6"
-
-[tool.poetry.scripts]
+[project.scripts]
 ldapsearch-json = "ldapsearch_json.__main__:run_cli"
 
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "pytest>=9.0.2",
+    "ruff>=0.15.6",
+    "ty>=0.0.23",
+    "types-ldap3>=2.9.13.20251121",
+]
+
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
