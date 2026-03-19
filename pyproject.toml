@@ -1,9 +1,11 @@
 
 [project]
-authors = [{ name = "James Hodgkinson", email = "james@terminaloutcomes.com" }]
-license = { text = "MIT" }
-requires-python = "<4.0,>=3.12"
-dependencies = ["ldap3>=2.9.1", "loguru>=0.7.3", "typer>=0.24.1"]
+requires-python = ">=3.12"
+dependencies = [
+    "ldap3>=2.9.1",  # this is just here to stop the toml formatter from flattening the list
+    "loguru>=0.7.3",
+    "typer>=0.24.1",
+]
 name = "ldapsearch-json"
 version = "0.0.6"
 description = "Script to dump LDAP data"
@@ -23,3 +25,8 @@ dev = [
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[tool.pytest.ini_options]
+markers = ["live: requires LDAPSEARCH_* env vars and real LDAP connectivity"]
+authors = [{ name = "James Hodgkinson", email = "james@terminaloutcomes.com" }]
+license = { text = "MIT" }
