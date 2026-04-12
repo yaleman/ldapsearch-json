@@ -25,10 +25,9 @@ RUN mkdir -p build/$appname
 WORKDIR /build
 
 COPY $appname $appname
-COPY poetry.lock .
+COPY uv.lock .
 COPY pyproject.toml .
 
-# RUN python -m pip install poetry
 
 RUN chown $runuser /build -R
 WORKDIR /build/
