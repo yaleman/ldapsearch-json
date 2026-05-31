@@ -35,7 +35,8 @@ def cleandict(data: Dict[str, Any]) -> Dict[str, Any]:
                 retval[key] = value[0]
             else:
                 retval[key] = [
-                    cleandict(item) if isinstance(item, dict) else item for item in value
+                    cleandict(item) if isinstance(item, dict) else item
+                    for item in value
                 ]
         elif isinstance(value, dict):
             retval[key] = cleandict(value)
@@ -54,6 +55,7 @@ def cli(
     ),
     username: Optional[str] = None,
     password: Optional[str] = None,
+    ignore_certificate: bool = False,
 ) -> None:
     """JSON-dumping terrible knockoff of ldapsearch"""
     filter_string = _resolve_typer_default(filter_string, FILTER)
@@ -62,8 +64,12 @@ def cli(
     )
     if not search_attributes:
         search_attributes = SEARCH_ATTRIBUTES_DEFAULT
-
-    tls_configuration = Tls(validate=ssl.CERT_REQUIRED, version=ssl.PROTOCOL_TLSv1_2)
+    if ignore_certificate:
+        tls_configuration = Tls(validate=ssl.CERT_NONE, version=ssl.PROTOCOL_TLSv1_2)
+    else:
+        tls_configuration = Tls(
+            validate=ssl.CERT_REQUIRED, version=ssl.PROTOCOL_TLSv1_2
+        )
     ldap_server = Server(server, use_ssl=True, get_info=ALL, tls=tls_configuration)
     try:
         with Connection(ldap_server, user=username, password=password) as conn:
